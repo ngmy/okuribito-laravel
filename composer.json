@@ -1,0 +1,69 @@
+{
+    "name": "ngmy/okuribito-laravel",
+    "description": "OkuribitoLaravel can monitor view loading and record it. This helps to remove unused view files.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "view-load-monitoring",
+        "view-load-recording",
+        "unused-view-removal"
+    ],
+    "authors": [
+        {
+            "name": "Yuta Nagamiya",
+            "email": "y.nagamiya@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "3.5.*|3.6.*|3.7.*|3.8.*",
+        "php-coveralls/php-coveralls": "^2.1",
+        "phpstan/phpstan": "^0.11",
+        "phpunit/phpunit": "^7.0",
+        "squizlabs/php_codesniffer": "^3.0",
+        "symfony/filesystem": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ngmy\\OkuribitoLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ngmy\\OkuribitoLaravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ngmy\\OkuribitoLaravel\\OkuribitoServiceProvider",
+                "Ngmy\\OkuribitoLaravel\\ComposerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": [
+            "@php vendor/bin/phpunit"
+        ],
+        "lint": [
+            "@php vendor/bin/phpcs"
+        ],
+        "findbug": [
+            "@php vendor/bin/phpstan analyse"
+        ],
+        "fmt": [
+            "@php vendor/bin/php-cs-fixer fix"
+        ]
+    }
+}

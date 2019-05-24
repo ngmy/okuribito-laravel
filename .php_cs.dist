@@ -1,0 +1,17 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in([
+        'src',
+        'tests',
+    ])
+;
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        'no_unused_imports' => true,
+    ])
+    ->setFinder($finder)
+;
+
+// vim: set ft=php:
