@@ -3,6 +3,11 @@
 [![Build Status](https://travis-ci.org/ngmy/okuribito-laravel.svg?branch=master)](https://travis-ci.org/ngmy/okuribito-laravel)
 [![Coverage Status](https://coveralls.io/repos/github/ngmy/okuribito-laravel/badge.svg?branch=master)](https://coveralls.io/github/ngmy/okuribito-laravel?branch=master)
 
+[![Latest Stable Version](https://poser.pugx.org/ngmy/okuribito-laravel/v/stable)](https://packagist.org/packages/ngmy/okuribito-laravel)
+[![Total Downloads](https://poser.pugx.org/ngmy/okuribito-laravel/downloads)](https://packagist.org/packages/ngmy/okuribito-laravel)
+[![Latest Unstable Version](https://poser.pugx.org/ngmy/okuribito-laravel/v/unstable)](https://packagist.org/packages/ngmy/okuribito-laravel)
+[![License](https://poser.pugx.org/ngmy/okuribito-laravel/license)](https://packagist.org/packages/ngmy/okuribito-laravel)
+
 OkuribitoLaravel can monitor view loading and record it. This helps to remove unused view files.
 
 This package is inspired by [Ruby's Okuribito gem](https://github.com/shakemurasan/okuribito).
